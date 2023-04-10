@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "IT",
+        "picture": "https://static.vecteezy.com/system/resources/thumbnails/004/699/890/small/it-letter-logo-isolated-on-white-background-vector.jpg",
+        "jobs_available": 220
+    },
+    {
+        "id": 2,
+        "name": "Sales",
+        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ13h1EOPcLelVDpWwFonJAvKg8w6UrVoFQ1WKgzo&s",
+        "jobs_available": 50
+    },
+    {
+        "id": 3,
+        "name": "Marketing",
+        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmNgJoWSlrwwRzYgEtE1A8i1ct_qYFEscWWA&usqp=CAU",
+        "jobs_available": 100
+    },
+    {
+        "id": 4,
+        "name": "Finance",
+        "picture": "https://static.vecteezy.com/system/resources/thumbnails/004/999/033/small/accountant-management-finance-logo-free-vector.jpg",
+        "jobs_available": 75
+    }
+]
