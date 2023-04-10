@@ -1,0 +1,26 @@
+.header-box{
+    padding: 0 150px;
+}
+
+.backgroundImg {
+    width: 816px;
+    height: 744px;
+}
+.header-title {
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 70px;
+}
+
+.header-title span {
+    /* color: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%); */
+    color: #7E90FE;
+}
+
+.header-description {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}

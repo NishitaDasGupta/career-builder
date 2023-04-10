@@ -9,7 +9,7 @@ import {
 import "./index.css";
 import Main from './Main/Main';
 import ErrorPage from './ErrorPage';
-import Home from './Home';
+import Home from './Home/Home';
 import Statistics from './Statistics';
 import Blog from './Blog';
 import AppliedJobs from './AppliedJobs';
