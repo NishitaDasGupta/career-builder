@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "IT",
+        "name": "Engineering Job",
         "picture": "https://static.vecteezy.com/system/resources/thumbnails/004/699/890/small/it-letter-logo-isolated-on-white-background-vector.jpg",
         "jobs_available": 220
     },
@@ -19,7 +19,7 @@
     },
     {
         "id": 4,
-        "name": "Finance",
+        "name": "Finance & Account",
         "picture": "https://static.vecteezy.com/system/resources/thumbnails/004/999/033/small/accountant-management-finance-logo-free-vector.jpg",
         "jobs_available": 75
     }

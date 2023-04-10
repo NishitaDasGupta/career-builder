@@ -1,0 +1,15 @@
+.category {
+    background-image: linear-gradient(90deg, rgba(126, 144, 254, 0.05) 0%, rgba(152, 115, 255, 0.05) 100%);
+    border-radius: 8px;
+}
+
+.category-img {
+    background-image: linear-gradient(90deg, rgba(126, 144, 254, 0.1) 0%, rgba(152, 115, 255, 0.1) 100%);
+    border-radius: 8px;
+}
+
+.category-name {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+}

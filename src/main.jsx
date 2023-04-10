@@ -22,6 +22,7 @@ children: [
   {
     path: "/",
     element: <Home></Home>,
+    loader: () => fetch('/jobData.json')
   },
   {
     path: "statistics",

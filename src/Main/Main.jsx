@@ -4,9 +4,12 @@ import { Outlet } from 'react-router-dom';
 import "./Main.css"
 const Main = () => {
     return (
-        <div className='main'>
+        <div className='main '>
             <Header></Header>
-            <Outlet></Outlet>
+            <div className=''>
+                <Outlet></Outlet>
+            </div>
+
         </div>
     );
 };
