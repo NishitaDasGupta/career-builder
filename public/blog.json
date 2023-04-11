@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "ques": "When should you use Context API?",
+        "ans": " Context provides a way to share values between components without having to explicity pass a prop through every level  of the time. When we need to share state between lot's of components with a lot of nesting. To avoid prop drilling, we can use context API."
+    },
+    {
+        "id": 2,
+        "ques": "What is a custom hook?",
+        "ans": "A custom Hook is a JavaScript function whose name starts with ”use” and that may call other Hooks. Hooks are reusable functions. When we have component logic that needs to be used by multiple components, we can extract that logic to a custom Hook."
+    },
+    {
+        "id": 3,
+        "ques": "What is a useRef?",
+        "ans": "The useRef Hook allows you to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly."
+    },
+    {
+        "id": 4,
+        "ques": "What is useMemo?",
+        "ans": "The React useMemo Hook returns a memoized value. The useMemo Hook only runs when one of its dependencies update. The useMemo Hook can be used to keep expensive, resource intensive functions from needlessly running."
+    }
+]

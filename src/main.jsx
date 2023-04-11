@@ -34,6 +34,7 @@ children: [
   {
     path: "blog",
     element: <Blog></Blog>,
+    loader: ()=> fetch('blog.json')
   },
   {
     path: "appliedJobs",
