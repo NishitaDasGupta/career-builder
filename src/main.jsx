@@ -1,7 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
-
 import {
   createBrowserRouter,
   RouterProvider,
@@ -12,7 +10,7 @@ import ErrorPage from './ErrorPage';
 import Home from './Home/Home';
 import Statistics from './Statistics';
 import Blog from './Blog';
-import AppliedJobs from './AppliedJobs';
+import AppliedJobs from './AppliedJobs/AppliedJobs';
 import JobDetails from './JobDetails/JobDetails';
 const router = createBrowserRouter([
   {
@@ -40,6 +38,7 @@ children: [
   {
     path: "appliedJobs",
     element: <AppliedJobs></AppliedJobs>,
+    loader: () => fetch('/jobData.json')
   }
 ]
   }

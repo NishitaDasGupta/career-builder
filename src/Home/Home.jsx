@@ -3,7 +3,7 @@ import "./Home.css"
 import Category from '../Category/Category';
 import { useLoaderData } from 'react-router-dom';
 import JobData from '../JobData/JobData';
-import JobDetails from '../JobDetails/JobDetails';
+
 const Home = () => {
 
     const [categorise, setCategorise] = useState([]);
