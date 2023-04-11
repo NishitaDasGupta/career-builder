@@ -3,7 +3,7 @@ import "./JobData.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot , faCircleDollarToSlot} from '@fortawesome/free-solid-svg-icons'
 import { useNavigate } from 'react-router-dom';
-const JobData = ({ jobdata,handleViewDetails }) => {
+const JobData = ({ jobdata }) => {
     const {job_id, company_location
         , company_logo, job_title, company_name, job_time, job_type, salary } = jobdata;
         const navigate = useNavigate();

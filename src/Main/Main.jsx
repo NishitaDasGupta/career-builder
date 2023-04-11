@@ -1,14 +1,16 @@
 import React from 'react';
 import Header from '../Header/Header';
 import { Outlet } from 'react-router-dom';
+import { useNavigation } from "react-router-dom";
 import "./Main.css"
 const Main = () => {
+    const navigation = useNavigation();
     return (
         <div className='main '>
             <Header></Header>
-            <div className=''>
-                <Outlet></Outlet>
-            </div>
+            
+            <Outlet></Outlet>
+            
 
         </div>
     );

@@ -7,10 +7,10 @@
     "job_type": "Remote",
     "job_time": "Full-Time",
     "salary": "120k-150k",
-    "company_location": "123 Main St, Anytown USA",
+    "company_location": "123 Main St, Adeatown, USA",
     "job_description": "We are seeking a skilled software engineer to join our team. The ideal candidate should have experience in developing complex software applications and should be familiar with the latest software development tools and methodologies. In this role, you will be responsible for designing, developing, and testing software applications, as well as collaborating with other team members to ensure high-quality software products are delivered on time and on budget.",
     "job_responsibilities":" Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
-    "experience": 3,
+    "experience": "3-4 years",
     "education_requirements": "Bachelor's Degree in Computer Science or related field",
     "contact_info":{
       "phone": "123-456-7890",
@@ -47,7 +47,7 @@
     "company_location": "789 Main St, Anytown USA",
     "job_description": "We are seeking a talented graphic designer to join our team. The ideal candidate should have experience in creating visually stunning designs and should be familiar with the latest design tools and methodologies. In this role, you will be responsible for creating designs for a variety of mediums, including web, print, and social media, as well as collaborating with other team members to ensure high-quality designs.",
     "job_responsibilities": " Collaborating with cross-functional teams: Graphic Designer often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
-    "experience": "5+ years",
+    "experience": "4-5 years",
     "education_requirements": "Bachelor's Degree","contact_info": {
       "phone": "123-456-7150",
       "email": "jobsneTFLIX@examplecompany3.com"
@@ -71,7 +71,7 @@
     }
   },
   {
-    "job_id": "5",
+    "job_id": 5,
     "company_logo": "https://1000logos.net/wp-content/uploads/2017/04/Microsoft-logo.jpg",
     "company_name": "MICROSOFT",
     "job_title": "Web Developer",
@@ -80,15 +80,15 @@
     "salary": "180k-200k",
     "company_location": "123 Main St, Anytown USA",
     "job_description": "Candidate will evidence a passion for delivering adaptive and creative solutions to Web Developing problems by staying up to date with best practices and emerging trends in user experience design and user interface technology.","job_responsibilities":"Collaborating with cross-functional teams: Project Manager often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
-    "experience": "3+ years of experience in web development",
-    "education_requirement": "Bachelor's degree in computer science or related field",
-    "contact_information": {
-      "phone": "555-1234",
-      "email": "careerMICROSOFT@example.com"
+    "experience": "2-3 years",
+    "education_requirements": "Bachelor's degree in computer science or related field",
+    "contact_info": {
+      "phone": "123-456-7890",
+      "email": "jobsMicrosoft@examplecompany4.com"
     }
   },
   {
-    "job_id": "6",
+    "job_id": 6,
     "company_logo": "data:image/png;base64,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",
     "company_name": "TESLA",
     "job_title": "UI/UX Designer",
@@ -96,10 +96,10 @@
     "job_time": "part-time",
     "salary": "150k-170k",
     "company_location": "123 Main St, Anytown USA",
-    "job_description": "Candidate will evidence a passion for delivering adaptive and creative solutions to UI/UX design problems by staying up to date with best practices and emerging trends in user experience design and user interface technology.","job_responsibilities":"Collaborating with cross-functional teams: UI/UX Designer often work closely with other teams the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.","experience": "3+ years of experience in UI/UX design","education_requirement": "Bachelor's degree in design or related field",
-    "contact_information": {
-      "phone": "555-5678",
-      "email": "careerTESLA@example.com"
+    "job_description": "Candidate will evidence a passion for delivering adaptive and creative solutions to UI/UX design problems by staying up to date with best practices and emerging trends in user experience design and user interface technology.","job_responsibilities":"Collaborating with cross-functional teams: UI/UX Designer often work closely with other teams the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.","experience": "3+ years","education_requirements": "Bachelor's degree in design or related field",
+    "contact_info": {
+      "phone": "123-456-7890",
+      "email": "jobsTesla@examplecompany4.com"
     }
   }
 ]
