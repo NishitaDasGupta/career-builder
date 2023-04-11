@@ -2,9 +2,11 @@ import React from 'react';
 import "./JobData.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot , faCircleDollarToSlot} from '@fortawesome/free-solid-svg-icons'
-const JobData = ({ jobdata }) => {
-    const { company_location
-        , company_logo, job_title, company_name, job_time, job_type, salary } = jobdata
+import { useNavigate } from 'react-router-dom';
+const JobData = ({ jobdata,handleViewDetails }) => {
+    const {job_id, company_location
+        , company_logo, job_title, company_name, job_time, job_type, salary } = jobdata;
+        const navigate = useNavigate();
     return (
         <div className='jobCart px-8 py-8'>
             <img className='jobCart img' src={company_logo} alt="" />
@@ -19,7 +21,7 @@ const JobData = ({ jobdata }) => {
                 <p className='job-loc-salary mr-6 mb-6'><FontAwesomeIcon icon={faCircleDollarToSlot} />{salary}</p>
             </div>
 
-            <button className='main text-xl text-white font-bold'>View Details</button>
+            <button onClick={()=>navigate(`/job/${job_id}`)} className='main text-xl text-white font-bold'>View Details</button>
         </div>
     );
 };

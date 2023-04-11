@@ -13,6 +13,7 @@ import Home from './Home/Home';
 import Statistics from './Statistics';
 import Blog from './Blog';
 import AppliedJobs from './AppliedJobs';
+import JobDetails from './JobDetails/JobDetails';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,6 +24,10 @@ children: [
     path: "/",
     element: <Home></Home>,
     loader: () => fetch('/jobData.json')
+  },
+  {
+    path: "/job/:id",
+    element: <JobDetails></JobDetails>
   },
   {
     path: "statistics",

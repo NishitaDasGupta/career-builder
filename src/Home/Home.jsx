@@ -3,6 +3,7 @@ import "./Home.css"
 import Category from '../Category/Category';
 import { useLoaderData } from 'react-router-dom';
 import JobData from '../JobData/JobData';
+import JobDetails from '../JobDetails/JobDetails';
 const Home = () => {
 
     const [categorise, setCategorise] = useState([]);
@@ -12,14 +13,14 @@ const Home = () => {
             .then(data => setCategorise(data));
     }, [])
     const jobsData = useLoaderData();
-    const [showAll, setShowAll] = useState(false)
+    const [showAll, setShowAll] = useState(false);
     const handlerSeeAll = () => {
         setShowAll(true);
     }
     return (
         <div >
             {/* banner  */}
-            <div className='banner flex justify-center items-center bg-slate-100'>
+            <div className={`banner flex justify-center items-center bg-slate-100 `}>
                 <div className='mr-14'>
                     <h1 className='banner-title'>One Step Closer To Your <span className='text'>Dream Job</span></h1>
                     <p className='description'>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
@@ -28,8 +29,8 @@ const Home = () => {
                 <img className='backgroundImg' src="back-img.avif" alt="" />
             </div>
             {/* category list  */}
-            <div className='category-list-section  mt-24'>
-                <h2 className='text-4xl text-center font-bold'>Job Category List</h2>
+            <div className={`category-list-section `}>
+                <h2 className='text-4xl text-center font-bold mt-24'>Job Category List</h2>
                 <p className='description text-center'>Explore thousands of job opportunities with all the information you need. Its your future</p>
 
                 <div className='grid grid-cols-4 gap-5 mx-36'>
@@ -45,22 +46,23 @@ const Home = () => {
 
             </div>
             {/* featured job section  */}
-            <div className='featured-job-section  mt-24'>
-                <h2 className='text-4xl text-center font-bold'>Featured Jobs</h2>
+            <div className={`featured-job-section `}>
+                <h2 className='text-4xl text-center font-bold mt-24'>Featured Jobs</h2>
                 <p className='description text-center'>Explore thousands of job opportunities with all the information you need. Its your future</p>
                 <div className='grid grid-cols-2 gap-5 mx-36 mb-8'>
                     {
-                        jobsData.slice(0,showAll?6 : 4).map(jobdata => <JobData
+                        jobsData.slice(0, showAll ? 6 : 4).map(jobdata => <JobData
                             key={jobdata.job_id}
                             jobdata={jobdata}
-
+                           
                         ></JobData>)
                     }
                 </div>
                 <div className='text-center'>
-                    <button onClick={handlerSeeAll} className= {`main text-xl text-white font-bold my-8 ${showAll ? "hidden" : "INLINE"}`}>See All Jobs</button>
+                    <button onClick={handlerSeeAll} className={`main text-xl text-white font-bold my-8 ${showAll ? "hidden" : "inline"}`}>See All Jobs</button>
                 </div>
             </div>
+           
         </div>
     );
 };
