@@ -1,8 +1,38 @@
 .jobCart{
-    width: 648px;
-    height: 392px;
+    /* width: 648px;
+    height: 392px; */
+   
+    border: 1px solid #E8E8E8;
+border-radius: 8px;
 }
 .jobCart img {
-    width: 147px;
-    height: 40px;
+    width: 150px;
+    height: 45px;
+}
+.title{
+    font-weight: 800;
+font-size: 24px;
+line-height: 33px;
+}
+.company{
+    font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+color: #757575;
+}
+.job-time{
+    font-weight: 800;
+font-size: 16px;
+line-height: 22px;
+color: #7E90FE;
+padding: 9px;
+border: 2px solid #7E90FE;
+border-radius: 5px;
+margin-right: 16px;
+}
+.job-loc-salary{
+    font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+color: #757575;
 }

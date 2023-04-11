@@ -12,7 +12,10 @@ const Home = () => {
             .then(data => setCategorise(data));
     }, [])
     const jobsData = useLoaderData();
-    console.log(jobsData);
+    const [showAll, setShowAll] = useState(false)
+    const handlerSeeAll = () => {
+        setShowAll(true);
+    }
     return (
         <div >
             {/* banner  */}
@@ -45,13 +48,17 @@ const Home = () => {
             <div className='featured-job-section  mt-24'>
                 <h2 className='text-4xl text-center font-bold'>Featured Jobs</h2>
                 <p className='description text-center'>Explore thousands of job opportunities with all the information you need. Its your future</p>
-                <div className='grid grid-cols-2 gap-5 mx-36'>
+                <div className='grid grid-cols-2 gap-5 mx-36 mb-8'>
                     {
-                        jobsData.map(jobdata => <JobData
+                        jobsData.slice(0,showAll?6 : 4).map(jobdata => <JobData
                             key={jobdata.job_id}
                             jobdata={jobdata}
+
                         ></JobData>)
                     }
+                </div>
+                <div className='text-center'>
+                    <button onClick={handlerSeeAll} className= {`main text-xl text-white font-bold my-8 ${showAll ? "hidden" : "INLINE"}`}>See All Jobs</button>
                 </div>
             </div>
         </div>
