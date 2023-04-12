@@ -4,9 +4,9 @@ import "./Header.css"
 const Header = () => {
     return (
         <div className='bg-slate-100'>
-            <div className='navbar flex items-center justify-between'>
+            <div className='md:pt-14 md:pb-11 md:px-36 p-5 md:flex items-center justify-between'>
                 <h1 className='text-3xl font-bold'>Career Builder</h1>
-                <nav className='flex items-center justify-between '>
+                <nav className='flex items-center justify-between py-6 px-3'>
                     <ActiveLink to="/"><span className='mr-4'>Home</span></ActiveLink>
                     <ActiveLink to="/statistics"><span className='mr-4'>Statistics</span></ActiveLink>
                     <ActiveLink to="/blog"><span className='mr-4'>Blog</span></ActiveLink>

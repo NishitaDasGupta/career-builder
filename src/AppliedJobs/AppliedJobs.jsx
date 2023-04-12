@@ -5,12 +5,25 @@ import Cart from '../Cart/Cart';
 import "./Applied.css"
 const AppliedJobs = () => {
     const [carts, setCarts] = useState([]);
-    // const [allcarts, setallCarts] = useState([]);
-    const [cartsRemote, setCartsRemote] = useState([]);
-    const [remote,setRemote] = useState(false);
-    const [cartsOnsite, setCartsOnsite] = useState([]);
-    const [onsite,setOnsite] = useState(false);
+    const [sortedCarts, setSortedCarts] = useState([]);
+    const [isSorted, setisSorted] = useState(false);
     const allData = useLoaderData();
+
+
+
+
+
+    const users = [
+        { name: 'Robin' },
+        { name: 'Markus' },
+    ];
+
+    const showUsers = true;
+
+
+
+
+
 
     useEffect(() => {
         const storedData = getApplyCart();
@@ -26,40 +39,43 @@ const AppliedJobs = () => {
         setCarts(newCarts);
         // setallCarts(newCarts);
     }, [allData])
-    const handleRemoteJob = () => {
-        const remoteJob = carts.filter(cart => cart.job_type === 'Remote');
-        // setRemote(true);
-        setCartsRemote(remoteJob);
-        // setCarts(remoteJob);
-        console.log({remoteJob});
+    const handleJobType = (type) => {
+        const value = carts.filter(cart => cart.job_type === type);
+        console.log(value);
+        setisSorted(true);
+        setSortedCarts(value);
     }
-    const handleOnsiteJob = () => {
-        const onSiteJob = allcarts.filter(cart => cart.job_type === 'Onsite');
-        // setOnsite(true);
-        setCartsOnsite(onSiteJob);
-        // setCarts(onSiteJob);
-        console.log({onSiteJob});
-    }
-   
-   
+
     return (
         <div>
             <div className={`banner jobDetails bg-slate-100 text-center`}>
                 <h2 className='pb-10 mb-24'>Applied Jobs</h2>
             </div>
             <div className='flex justify-end mx-16'>
-                <button onClick={handleRemoteJob} className='button-time'>Remote</button>
-                <button onClick={handleOnsiteJob}  className='button-time'>Onsite</button>
+                <button onClick={() => handleJobType("Remote")} className='button-time'>Remote</button>
+                <button onClick={() => handleJobType("Onsite")} className='button-time'>Onsite</button>
             </div>
-            <div className={`mx-36 `}>
-                {
-                    carts.map(cart => <Cart
-                        key={cart.job_id}
-                        cart={cart}
-                    ></Cart>)
+            <div className='mx-36'>
+                {isSorted ?
+                    <ul>
+                        {
+                            sortedCarts.map(cart => <Cart
+                                key={cart.job_id}
+                                cart={cart}
+                            ></Cart>)
+                        }
+                    </ul>
+                    :
+                    <ul>
+                        {
+                            carts.map(cart => <Cart
+                                key={cart.job_id}
+                                cart={cart}
+                            ></Cart>)
+                        }
+                    </ul>
                 }
             </div>
-
         </div>
     );
 };

@@ -20,7 +20,7 @@ const Home = () => {
     return (
         <div >
             {/* banner  */}
-            <div className={`banner flex justify-center items-center bg-slate-100 `}>
+            <div className={`md:px-36 px-8 md:flex justify-center items-center bg-slate-100 `}>
                 <div className='mr-14'>
                     <h1 className='banner-title'>One Step Closer To Your <span className='text'>Dream Job</span></h1>
                     <p className='description'>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
@@ -33,7 +33,7 @@ const Home = () => {
                 <h2 className='text-4xl text-center font-bold mt-24'>Job Category List</h2>
                 <p className='description text-center'>Explore thousands of job opportunities with all the information you need. Its your future</p>
 
-                <div className='grid grid-cols-4 gap-5 mx-36'>
+                <div className='grid grid-cols-1 md:grid-cols-4 gap-5 mx-10 md:mx-36'>
                     {
                         categorise.map(category => <Category
                             key={category.id}
@@ -49,7 +49,7 @@ const Home = () => {
             <div className={`featured-job-section `}>
                 <h2 className='text-4xl text-center font-bold mt-24'>Featured Jobs</h2>
                 <p className='description text-center'>Explore thousands of job opportunities with all the information you need. Its your future</p>
-                <div className='grid grid-cols-2 gap-5 mx-36 mb-8'>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-5 mx-10 md:mx-36 mb-8'>
                     {
                         jobsData.slice(0, showAll ? 6 : 4).map(jobdata => <JobData
                             key={jobdata.job_id}
